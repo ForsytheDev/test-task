@@ -1,0 +1,31 @@
+.search {
+  gap: 1px;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  .label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .bar {
+    width: 430px;
+    padding: 8px 30px 8px 15px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    outline: none;
+    font-size: 20px;
+    border: 1.5px solid #808080;
+    &::placeholder {
+      opacity: 0.55;
+    }
+  }
+  .closer {
+    top: 50%;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    user-select: none;
+  }
+}
